@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./dist/style.css" rel="stylesheet" />
+        <title>Infotecs Test Case</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="container">
+                <table class="table">
+                    <thead class="table__head">
+                        <tr class="table__row_header">
+                            <th class="table__header table__header_firstName">
+                                Имя(FirstName)
+                            </th>
+                            <th class="table__header table__header_lastName">
+                                Фамилия(LastName)
+                            </th>
+                            <th class="table__header table__header_about">
+                                Описание(About)
+                            </th>
+                            <th class="table__header table__header_eyeColor">
+                                Цвет Глаз(Eye Color)
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body"></tbody>
+                </table>
+                <div class="visibility__switchers">
+                    <div class="switcher__firstName">
+                        Switch first name visibility
+                    </div>
+                    <div class="switcher__lastName">
+                        Switch last name visibility
+                    </div>
+                    <div class="switcher__about">Switch about visibility</div>
+                    <div class="switcher__eyeColor">
+                        Switch eye color visibility
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <div class="pagination__pages">
+                        <ul class="page-list"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit">
+                <div class="edit__firstName edit-firstName">
+                    <h4 class="edit-firstName__header">Change First Name</h4>
+                    <input class="edit-firstName__input" />
+                </div>
+                <div class="edit__lastName edit-lastName">
+                    <h4 class="edit-lastName__header">Change Last Name</h4>
+                    <input class="edit-lastName__input" />
+                </div>
+                <div class="edit__about edit-about">
+                    <h4 class="edit-about__header">Change About</h4>
+                    <input class="edit-about__input" />
+                </div>
+                <div class="edit__eyeColor edit-eyeColor">
+                    <h4 class="edit-eyeColor__header">Change Eye Color</h4>
+                    <input class="edit-eyeColor__input" />
+                </div>
+            </div>
+        </div>
+        <div class="alert">
+            If you want to sort column just click on header of this column<br />
+            If you want to edit row just click on it
+            <div class="alert__cross"></div>
+        </div>
+        <script src="./dist/bundle.js"></script>
+    </body>
+</html>
